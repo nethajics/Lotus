@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us – Lotus GeoSolutions</title>
+
+<!-- Leaflet CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="Style/Stylesheet.css">
+<link rel="stylesheet" href="Style/Pages.css">
+</head>
+
+<body>
+
+<div id="top-loader">
+    <div class="top-loader-bar"></div>
+</div>
+
+<header>
+    <div class="container nav">
+        <div class="nav-left">
+            <a href="index.html">
+                <img src="Images/Lotuslogo.png"  class="logo" alt="Lotus GeoSolutions Logo">
+            </a>
+            <div class="company-name">Lotus GeoSolutions Pvt Ltd</div>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About_us.html">About us</a></li>
+
+            <li class="mega-dropdown">
+                <a href="Services.html">Services ⮟</a>
+                <div class="mega-menu">
+                    <ul>
+                        <li><a href="Services.html#photogrammetry">Photogrammetry</a></li>
+                        <li><a href="Services.html#lidar">LiDAR</a></li>
+                        <li><a href="Services.html#GIS">GIS</a></li>
+                        <li><a href="Services.html#ORTHO">Orthophoto</a></li>
+                        <li><a href="Services.html#BIM">3D Modeling</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="mega-dropdown">
+                <a href="Projects.html">Projects ⮟</a>
+                <div class="mega-menu">
+                    <ul>
+                        <li class="sub-dropdown">
+                            <a href="Projects.html#project-experience">Project Experience ➢</a>
+                            <div class="sub-menu">
+                                <ul class="mega-menu">
+                                    <li><a href="Projects.html#infrastructure-transportation">Infrastructure &amp; Transportation</a></li>
+                                    <li><a href="Projects.html#Urban Planning-Smart Cities">Urban Planning &amp; Smart Cities</a></li>
+                                    <li><a href="Projects.html#Mining-Quarry">Mining &amp; Quarry</a></li>
+                                    <li><a href="Projects.html#Power-Utilities">Power &amp; Utilities</a></li>
+                                    <li><a href="Projects.html#Oil-Gas">Oil &amp; Gas / Energy</a></li>
+                                    <li><a href="Projects.html#Construction">Construction &amp; Real Estate</a></li>
+                                    <li><a href="Projects.html#Agriculture">Agriculture &amp; Forestry</a></li>
+                                    <li><a href="Projects.html#Disaster">Disaster Management &amp; Environment</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="Projects.html#projects-executed">Projects Executed</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li><a href="Contactus.html">Contact</a></li>
+        </ul>
+
+        <div class="theme-switch">
+            <span>Light</span>
+            <label class="switch">
+                <input type="checkbox" id="darkToggle">
+                <span class="slider"></span>
+            </label>
+            <span>Dark</span>
+        </div>
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<nav class="mobile-menu" id="mobileMenu">
+    <a href="Home.html">🏠 Home</a>
+    <a href="About_us.html">ℹ️ About Us</a>
+    <a href="Services.html">🛠️ Services</a>
+    <a href="Services.html#photogrammetry" class="mobile-menu-child">↳ Photogrammetry</a>
+    <a href="Services.html#lidar" class="mobile-menu-child">↳ LiDAR</a>
+    <a href="Services.html#GIS" class="mobile-menu-child">↳ GIS</a>
+    <a href="Services.html#ORTHO" class="mobile-menu-child">↳ Orthophoto</a>
+    <a href="Services.html#BIM" class="mobile-menu-child">↳ 3D Modeling</a>
+    <a href="Projects.html">📁 Projects</a>
+    <a href="Projects.html#project-experience" class="mobile-menu-child">↳ Project Experience</a>
+    <a href="Projects.html#projects-executed" class="mobile-menu-child">↳ Projects Executed</a>
+    <a href="Contactus.html">📬 Contact</a>
+</nav>
+
+
+<section class="contact-section">
+    <div class="contact-main-wrapper">
+
+        <!-- LEFT — FORM -->
+        <div class="contact-left">
+
+            <div class="contact-header">
+                <h2>Contact Us</h2>
+                <p class="sub-text">
+                    <span class="small-text">for</span>
+                    <i><span class="highlight-text">&nbsp;&nbsp;&nbsp;&nbsp;Building Smarter Maps</span></i>
+                </p>
+            </div>
+
+            <form class="contact-form" onsubmit="sendMail(event)">
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>First name</label>
+                        <input type="text" id="firstName" placeholder="Enter first name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Last name</label>
+                        <input type="text" id="lastName" placeholder="Enter last name" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Email address</label>
+                        <input type="email" id="email" placeholder="Enter email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Phone</label>
+                        <input type="text" id="phone" placeholder="00-000-000">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Country</label>
+                        <input type="text" id="country" placeholder="Enter country">
+                    </div>
+                    <div class="form-group">
+                        <label>Your company</label>
+                        <input type="text" id="company" placeholder="Company name">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Your position</label>
+                    <select id="position">
+                        <option>Employee</option>
+                        <option>Manager</option>
+                        <option>Director</option>
+                        <option>Business Owner</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea rows="5" id="message" placeholder="Write your message here..." required></textarea>
+                </div>
+
+                <div class="submit-wrapper">
+                    <button type="submit" class="contact-btn">Send a request</button>
+                </div>
+
+            </form>
+        </div>
+
+        <!-- RIGHT — MAP + DETAILS -->
+        <div class="contact-right">
+
+            <div class="map-container">
+                <div id="map"></div>
+            </div>
+
+            <div class="contact-info">
+<img src="Images/Backgroud_Img/Contactsus.png"  width="370"  height="230" style="float: center;" alt="Contact Us"    style="display: block; margin: auto; filter: blur(15px);" >
+            
+
+    <p>
+                    <strong>Address</strong><br>
+                    <span class="company">Lotus Geosolutions Pvt. Ltd,</span><br>
+                    26/1, Sowbhagya Complex, 3rd Floor, 24th Main, 5th Phase,<br>
+                    JP Nagar, Bangalore, Karnataka 560 078
+                </p>
+
+                <p>
+                    <strong>Phone</strong><br>
+                    +91-80-2659 6043<br>
+                    +91-80-2659 1209
+                </p>
+
+                <p>
+                    <strong>Email</strong><br>
+                    <a href="mailto:k.pushparaj@lotusgeo.in">k.pushparaj@lotusgeo.in</a><br>
+                    <a href="mailto:vinod@lotusgeo.in">vinod@lotusgeo.in</a>
+
+
+
+                </p>
+
+                <p>
+                    <strong>Working Hours</strong><br>
+                    Mon – Sat: 9:00 am – 06:00 pm
+                </p>
+
+                <div class="social-contact">
+                    <a href="https://wa.me/918553153533" target="_blank" class="social-icon whatsapp" title="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="mailto:k.pushparaj@lotusgeo.in" class="social-icon email" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://in.linkedin.com/company/lotus-geo-solution-private-ltd" target="_blank" class="social-icon linkedin" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-links">
+            <a href="About_us.html">About</a>
+            <a href="Services.html">Services</a>
+            <a href="Projects.html">Projects</a>
+            <a href="Contactus.html">Contact</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        © 2026 Lotus Geo Solution Pvt Ltd. All Rights Reserved.
+    </div>
+</footer>
+
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script>
+    var map = L.map('map').setView([12.9038461, 77.5859047], 17);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    L.marker([12.9038461, 77.5859047])
+        .addTo(map)
+        .bindPopup('<strong>Lotus Geosolutions Pvt. Ltd</strong><br>JP Nagar, Bangalore')
+        .openPopup();
+</script>
+
+<script src="Script/Myscript.js"></script>
+</body>
+</html>

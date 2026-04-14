@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Services – Lotus GeoSolutions</title>
+<link rel="stylesheet" href="Style/Stylesheet.css">
+<link rel="stylesheet" href="Style/Pages.css">
+<style>
+body { background: url("Images/Backgroud_Img/Services1.png") no-repeat center center fixed; background-size: cover; }
+</style>
+</head>
+
+<body>
+
+<div id="top-loader">
+    <div class="top-loader-bar"></div>
+</div>
+
+<header>
+    <div class="container nav">
+        <div class="nav-left">
+            <a href="index.html">
+                <img src="Images/Lotuslogo.png"  class="logo" alt="Lotus GeoSolutions Logo">
+            </a>
+            <div class="company-name">Lotus GeoSolutions Pvt Ltd</div>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About_us.html">About us</a></li>
+
+            <li class="mega-dropdown">
+                <a href="Services.html">Services ⮟</a>
+                <div class="mega-menu">
+                    <ul>
+                        <li><a href="Services.html#photogrammetry">Photogrammetry</a></li>
+                        <li><a href="Services.html#lidar">LiDAR</a></li>
+                        <li><a href="Services.html#GIS">GIS</a></li>
+                        <li><a href="Services.html#ORTHO">Orthophoto</a></li>
+                        <li><a href="Services.html#BIM">3D Modeling</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="mega-dropdown">
+                <a href="Projects.html">Projects ⮟</a>
+                <div class="mega-menu">
+                    <ul>
+                        <li class="sub-dropdown">
+                            <a href="Projects.html#project-experience">Project Experience ➢</a>
+                            <div class="sub-menu">
+                                <ul class="mega-menu">
+                                    <li><a href="Projects.html#infrastructure-transportation">Infrastructure &amp; Transportation</a></li>
+                                    <li><a href="Projects.html#Urban Planning-Smart Cities">Urban Planning &amp; Smart Cities</a></li>
+                                    <li><a href="Projects.html#Mining-Quarry">Mining &amp; Quarry</a></li>
+                                    <li><a href="Projects.html#Power-Utilities">Power &amp; Utilities</a></li>
+                                    <li><a href="Projects.html#Oil-Gas">Oil &amp; Gas / Energy</a></li>
+                                    <li><a href="Projects.html#Construction">Construction &amp; Real Estate</a></li>
+                                    <li><a href="Projects.html#Agriculture">Agriculture &amp; Forestry</a></li>
+                                    <li><a href="Projects.html#Disaster">Disaster Management &amp; Environment</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="Projects.html#projects-executed">Projects Executed</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li><a href="Contactus.html">Contact</a></li>
+        </ul>
+
+        <div class="theme-switch">
+            <span>Light</span>
+            <label class="switch">
+                <input type="checkbox" id="darkToggle">
+                <span class="slider"></span>
+            </label>
+            <span>Dark</span>
+        </div>
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<nav class="mobile-menu" id="mobileMenu">
+    <a href="Home.html">🏠 Home</a>
+    <a href="About_us.html">ℹ️ About Us</a>
+    <a href="Services.html">🛠️ Services</a>
+    <a href="Services.html#photogrammetry" class="mobile-menu-child">↳ Photogrammetry</a>
+    <a href="Services.html#lidar" class="mobile-menu-child">↳ LiDAR</a>
+    <a href="Services.html#GIS" class="mobile-menu-child">↳ GIS</a>
+    <a href="Services.html#ORTHO" class="mobile-menu-child">↳ Orthophoto</a>
+    <a href="Services.html#BIM" class="mobile-menu-child">↳ 3D Modeling</a>
+    <a href="Projects.html">📁 Projects</a>
+    <a href="Projects.html#project-experience" class="mobile-menu-child">↳ Project Experience</a>
+    <a href="Projects.html#projects-executed" class="mobile-menu-child">↳ Projects Executed</a>
+    <a href="Contactus.html">📬 Contact</a>
+</nav>
+
+
+<!-- Lightbox -->
+<div class="popup" id="popup">
+    <span class="close" onclick="closePopup()">&times;</span>
+    <img class="popup-content" id="popupImg">
+</div>
+
+
+<!-- Services Intro -->
+<section class="about">
+    <div class="container about-wrapper">
+        <div class="about-text">
+            <div class="section-title">
+                <h2>Services</h2>
+            </div>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;With more than two decades of experience in the mapping industry, we are well aligned with evolving technologies and changing customer needs. By continuously adopting new software and production methodologies, we enhance our capabilities and improve delivery efficiency.
+            </p>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We have established dedicated teams for each deliverable as part of our production process. Our strong team of professionals efficiently executes projects with precision and reliability. Over the years, we have developed specialized methodologies for different mapping domains to enhance production efficiency and deliver the best results.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<!-- Photogrammetry -->
+<section class="advantages" id="photogrammetry">
+    <div class="container">
+        <div class="section-title">
+            <h4>Photogrammetry</h4>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Having been in this business for more than 2 decades we are comfortably tuned into adapting to changing technologies and customer needs as demanded by the ever-increasing customized applications.
+            </p>
+            <p>We work on photogrammetric <strong>Aerial images, Satellite images, Drone images and point cloud inputs</strong> of various scales to provide high-accuracy spatial data. Our services in photogrammetry include</p>
+        </div>
+        <div class="adv-grid">
+            <ul>
+                <li>Aerial Triangulation</li>
+                <li>Orthophoto generation</li>
+                <li>Topographic Mapping</li>
+                <li>DTM / DSM Creation</li>
+                <li>Contour Extraction</li>
+                <li>Planimetric Data Capture</li>
+                <li>CAD Editing &amp; Conversion</li>
+            </ul>
+            <img src="Images/Services/Slides/PGY/PGY.GIF" class="popup-img" onclick="openPopup(this)">
+        </div>
+    </div>
+</section>
+
+
+<!-- LiDAR -->
+<section class="advantages" id="lidar">
+    <div class="container">
+        <div class="section-title">
+            <h4>LiDAR</h4>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LiDAR is currently the most comprehensive and accurate method of creating spatial data. Lotus Geosolutions has an exceptional team to provide consistency in quality and cost-effective LiDAR services.</p>
+            <p>Ground classification (Bare earth extraction) and advanced ground classification are performed. Our LiDAR services include</p>
+            <br>
+            <strong><u>Platforms</u></strong>
+            <div class="feature-grid">
+                <div class="feature-box"><h3>✈️ Airborne LiDAR</h3></div>
+                <div class="feature-box"><h3>🚗 Mobile LiDAR</h3></div>
+            </div>
+        </div>
+        <div class="adv-grid">
+            <ul>
+                <li>Flight line Matching</li>
+                <li>Ground Classification</li>
+                <li>Advanced Classification</li>
+                <li>2D vectorization</li>
+                <li>3D vectorization</li>
+                <li>DTM / DSM generation</li>
+                <li>Contour creation</li>
+                <li>Orthophoto generation</li>
+                <li>CAD editing</li>
+            </ul>
+            <img src="Images/Services/Slides/Lidar/Lidar.GIF" class="popup-img" onclick="openPopup(this)">
+        </div>
+    </div>
+</section>
+
+
+<!-- GIS -->
+<section class="advantages" id="GIS">
+    <div class="container">
+        <div class="section-title">
+            <h4>GIS</h4>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lotus Geosolutions provides comprehensive GIS data by processing Georeference, Projection conversion and Data attribution. The GDB of the project is validated by our QA team and delivered on-time with persistent quality. Our GIS services include</p>
+        </div>
+        <div class="adv-grid">
+            <ul>
+                <li>Geo Reference</li>
+                <li>Cadastral mapping</li>
+                <li>Planimetric Mapping</li>
+                <li>Data Attribution &amp; Validation</li>
+                <li>CAD Editing with Annotation</li>
+                <li>Traffic sign and Attribution</li>
+            </ul>
+            <img src="Images/Services/Slides/GIS/GIS.GIF" class="popup-img" onclick="openPopup(this)">
+        </div>
+    </div>
+</section>
+
+
+<!-- Orthophoto -->
+<section class="advantages" id="ORTHO">
+    <div class="container">
+        <div class="section-title">
+            <h4>Orthophoto</h4>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;An orthoimage is an aerial or satellite image that has been geometrically corrected (orthorectified) to ensure uniform scale and mapping accuracy. At Lotus Geo Solutions, we offer advanced orthoimage processing services to support precise and reliable geospatial analysis. Our Orthophoto production services include</p>
+        </div>
+        <div class="adv-grid">
+            <ul>
+                <li>Drone, Satellite &amp; Aerial Orthophotos</li>
+                <li>True Orthophotos</li>
+                <li>3-Band &amp; 4-Band Outputs</li>
+                <li>Pan-Sharpened Imagery</li>
+                <li>LiDAR-Integrated Orthophotos</li>
+            </ul>
+            <img src="Images/Services/Slides/Ortho/ORTHO.GIF" class="popup-img" onclick="openPopup(this)">
+        </div>
+    </div>
+</section>
+
+
+<!-- BIM -->
+<section class="advantages" id="BIM">
+    <div class="container">
+        <div class="section-title">
+            <h4>Building Information Modelling (BIM)</h4>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BIM revolutionizes the design, construction, and operation of buildings by creating a digital twin of real-world projects. At Lotus Geo Solutions, we offer comprehensive BIM services that are transforming the construction industry. We work closely with clients to develop custom 3D Revit models, with a strong emphasis on accuracy in every model we create. We provide Scan to BIM for</p>
+            <br>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Our organization works with clients in line with their needs to create custom 3D Revit models. We have a skilled workforce of BIM modellers enough to deliver tailor-made 3D modelling services just the way the clients want. We mostly emphasize precision when it comes to Revit 3D modelling.</p>
+            <br>
+            <div class="feature-grid3">
+                <div class="feature-box"><h3>🏗️ Structural BIM</h3></div>
+                <div class="feature-box"><h3>🏢 Architectural BIM</h3></div>
+                <div class="feature-box">
+                    <h3>🧩MEP</h3>
+                </div>
+            </div>
+        </div>
+        <div class="adv-grid">
+            <ul>
+                <li>Point Cloud to 3D model</li>
+                <li>2D Floor Planning</li>
+                <li>2D Cross-section plan</li>
+                <li>2D Elevation plan</li>
+                <li>2D Ceiling plan</li>
+                <li>2D drawing to 3D model</li>
+            </ul>
+            <img src="Images/Services/Slides/BIM/BIM.GIF" class="popup-img" onclick="openPopup(this)">
+        </div>
+    </div>
+</section>
+
+
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-links">
+            <a href="About_us.html">About</a>
+            <a href="Services.html">Services</a>
+            <a href="Projects.html">Projects</a>
+            <a href="Contactus.html">Contact</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        © 2026 Lotus Geo Solution Pvt Ltd. All Rights Reserved.
+    </div>
+</footer>
+
+<script src="Script/Myscript.js"></script>
+</body>
+</html>

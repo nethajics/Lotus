@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lotus GeoSolutions – About Us</title>
+<link rel="stylesheet" href="Style/Stylesheet.css">
+<link rel="stylesheet" href="Style/Pages.css">
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+    let slides = document.querySelectorAll(".mini-slide");
+    let dots   = document.querySelectorAll(".mini-dots span");
+    let index  = 0;
+
+    function showSlide(i){
+        slides.forEach(s => s.classList.remove("active"));
+        dots.forEach(d => d.classList.remove("active"));
+        slides[i].classList.add("active");
+        dots[i].classList.add("active");
+    }
+
+    function nextSlide(){
+        index = (index + 1) % slides.length;
+        showSlide(index);
+    }
+
+    setInterval(nextSlide, 3000);
+
+    dots.forEach((dot, i) => {
+        dot.addEventListener("click", () => { index = i; showSlide(index); });
+    });
+});
+</script>
+</head>
+<body>
+
+<!-- Page uses body background set in Stylesheet.css or inline on body tag below -->
+<style>
+body { background: url("Images/Backgroud_Img/ABNF.png") no-repeat center center fixed; background-size: cover; }
+</style>
+
+<div id="top-loader">
+    <div class="top-loader-bar"></div>
+</div>
+
+<header>
+    <div class="container nav">
+        <div class="nav-left">
+            <a href="index.html">
+               <img src="Images/Lotuslogo.png"  class="logo" alt="Lotus GeoSolutions Logo">
+            </a>
+            <div class="company-name">Lotus GeoSolutions Pvt Ltd</div>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About_us.html">About us</a></li>
+
+            <li class="mega-dropdown">
+                <a href="Services.html">Services ⮟</a>
+                <div class="mega-menu">
+                    <ul>
+                        <li><a href="Services.html#photogrammetry">Photogrammetry</a></li>
+                        <li><a href="Services.html#lidar">LiDAR</a></li>
+                        <li><a href="Services.html#GIS">GIS</a></li>
+                        <li><a href="Services.html#ORTHO">Orthophoto</a></li>
+                        <li><a href="Services.html#BIM">3D Modeling</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="mega-dropdown">
+                <a href="Projects.html">Projects ⮟</a>
+                <div class="mega-menu">
+                    <ul>
+                        <li class="sub-dropdown">
+                            <a href="Projects.html#project-experience">Project Experience ➢</a>
+                            <div class="sub-menu">
+                                <ul class="mega-menu">
+                                    <li><a href="Projects.html#infrastructure-transportation">Infrastructure &amp; Transportation</a></li>
+                                    <li><a href="Projects.html#Urban Planning-Smart Cities">Urban Planning &amp; Smart Cities</a></li>
+                                    <li><a href="Projects.html#Mining-Quarry">Mining &amp; Quarry</a></li>
+                                    <li><a href="Projects.html#Power-Utilities">Power &amp; Utilities</a></li>
+                                    <li><a href="Projects.html#Oil-Gas">Oil &amp; Gas / Energy</a></li>
+                                    <li><a href="Projects.html#Construction">Construction &amp; Real Estate</a></li>
+                                    <li><a href="Projects.html#Agriculture">Agriculture &amp; Forestry</a></li>
+                                    <li><a href="Projects.html#Disaster">Disaster Management &amp; Environment</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="Projects.html#projects-executed">Projects Executed</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li><a href="Contactus.html">Contact</a></li>
+        </ul>
+
+        <div class="theme-switch">
+            <span>Light</span>
+            <label class="switch">
+                <input type="checkbox" id="darkToggle">
+                <span class="slider"></span>
+            </label>
+            <span>Dark</span>
+        </div>
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<nav class="mobile-menu" id="mobileMenu">
+    <a href="Home.html">🏠 Home</a>
+    <a href="About_us.html">ℹ️ About Us</a>
+    <a href="Services.html">🛠️ Services</a>
+    <a href="Services.html#photogrammetry" class="mobile-menu-child">↳ Photogrammetry</a>
+    <a href="Services.html#lidar" class="mobile-menu-child">↳ LiDAR</a>
+    <a href="Services.html#GIS" class="mobile-menu-child">↳ GIS</a>
+    <a href="Services.html#ORTHO" class="mobile-menu-child">↳ Orthophoto</a>
+    <a href="Services.html#BIM" class="mobile-menu-child">↳ 3D Modeling</a>
+    <a href="Projects.html">📁 Projects</a>
+    <a href="Projects.html#project-experience" class="mobile-menu-child">↳ Project Experience</a>
+    <a href="Projects.html#projects-executed" class="mobile-menu-child">↳ Projects Executed</a>
+    <a href="Contactus.html">📬 Contact</a>
+</nav>
+
+
+<section class="mini-hero-slider">
+    <div class="mini-slide active" style="background-image:url('Images/Office/1.png')"></div>
+    <div class="mini-slide"        style="background-image:url('Images/Office/2.png')"></div>
+    <div class="mini-slide"        style="background-image:url('Images/Office/3.png')"></div>
+    <div class="mini-dots">
+        <span class="active"></span>
+        <span></span>
+        <span></span>
+    </div>
+</section>
+
+
+<section class="about">
+    <div class="container about-wrapper">
+        <div class="about-text">
+
+            <div class="section-title">
+                <h2>🚀 About Us</h2>
+            </div>
+
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Founded in 1999, Lotus Geo began with photogrammetric compilation services using two AMH analytical plotters and has evolved into a full-spectrum geospatial solutions provider.
+            </p>
+
+            <p>Today, we integrate:</p>
+
+            <p><span class="tick">➤ <strong>Aerial &amp; terrestrial photogrammetry</strong></span></p>
+            <p><span class="tick">➤ <strong>LiDAR and point cloud processing</strong></span></p>
+            <p><span class="tick">➤ <strong>Satellite &amp; drone imagery</strong></span></p>
+            <p><span class="tick">➤ <strong>Advanced GIS workflows</strong></span></p>
+
+            <br>
+
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Our strength lies in combining deep technical expertise, structured processes, and cutting-edge tools to deliver consistent, high-quality results.</p>
+
+            <br>
+
+            <p><span class="tick"><strong>✔ ISO 9001:2008 Certified</strong></span></p>
+            <p><span class="tick"><strong>✔ Global project experience</strong></span></p>
+            <p><span class="tick"><strong>✔ Proven delivery across complex terrains</strong></span></p>
+
+            <br>
+
+            <p><strong>Our Promise:</strong></p>
+            <p><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Customer-ready data. Delivered on time. Every time.</i></p>
+
+            <hr>
+
+            <h2>💡 Why Lotus Geo</h2>
+
+            <br>
+
+            <p><span class="tick1"><strong>✔ 25+ Years of Proven Expertise</strong></span></p>
+            <p>Decades of experience delivering reliable geospatial data across global markets.</p>
+
+            <p><span class="tick1"><strong>✔ Precision-Driven Quality</strong></span></p>
+            <p>Multi-level QA systems and continuous validation ensure unmatched accuracy.</p>
+
+            <p><span class="tick1"><strong>✔ Faster Turnaround Times</strong></span></p>
+            <p>Optimized workflows and 24/7 operations accelerate project delivery.</p>
+
+            <p><span class="tick1"><strong>✔ In-House Technology Advantage</strong></span></p>
+            <p>Custom-built tools improve efficiency, reduce errors, and enhance output quality.</p>
+
+            <p><span class="tick1"><strong>✔ Client-Centric Execution</strong></span></p>
+            <p>Dedicated point of contact, transparent communication, and real-time updates.</p>
+
+            <p><span class="tick1"><strong>✔ Cost-Effective Solutions</strong></span></p>
+            <p>Streamlined processes that minimize rework and maximize value.</p>
+
+            <hr>
+
+            <h2>👥 Who We Are</h2>
+
+            <br>
+
+            <p>• A team of 70+ geospatial professionals</p>
+            <p>• Experts in multi-domain mapping technologies</p>
+            <p>• Operating in 24/7 production environments</p>
+            <p>• Focused on accuracy, scalability, and reliability</p>
+
+            <p><i>We don't just deliver data—we deliver confidence in every dataset.</i></p>
+
+        </div>
+    </div>
+</section>
+
+
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-links">
+            <a href="About_us.html">About</a>
+            <a href="Services.html">Services</a>
+            <a href="Projects.html">Projects</a>
+            <a href="Contactus.html">Contact</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        © 2026 Lotus Geo Solution Pvt Ltd. All Rights Reserved.
+    </div>
+</footer>
+
+<script src="Script/Myscript.js"></script>
+</body>
+</html>
